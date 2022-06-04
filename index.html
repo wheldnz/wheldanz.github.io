@@ -10,6 +10,8 @@
 
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <!-- library AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
     <title>My portfolio | M. Wildan Nuril A</title>
@@ -47,7 +49,7 @@
 
     <!-- jumbotron -->
     <section class="jumbotron text-center text-light">
-      <img src="img/Proyek 3.jpg" alt="M. Wildan" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/Proyek 3.jpg" alt="M. Wildan" width="200" class="rounded-circle img-thumbnail" data-aos="fade-in"/>
       <h1 class="display-4">M. Wildan Nuril Akmal</h1>
 
       <p class="lead">Mahasiswa | Illustator</p>
@@ -63,7 +65,7 @@
 
     <!-- about me -->
     <section id="about" style="background-color: #fae630">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-offset="380">
         <div class="row text-center mb-3">
           <div class="col"><h2>About Me</h2></div>
           <div class="row justify-content-center fs-5 text-center">
@@ -94,32 +96,32 @@
         </div>
         <div class="row justify-content-evenly fs-5">
           <div class="col-md-4 mb-3">
-            <div class="card" >
+            <div class="card" data-aos="zoom-in-up"  >
               <img src="img/project/6.jpg" class="card-img-top" alt="project 1" />
               <div class="card-body text-center">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="card" >
+            <div class="card" data-aos="zoom-in-up" data-aos-delay="100" >
               <img src="img/project/7.png" class="card-img-top" alt="project 2" />
               <div class="card-body text-center">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div><div class="col-md-4 mb-3">
-            <div class="card" >
+            <div class="card" data-aos="zoom-in-up" data-aos-delay="200">
               <img src="img/project/8.png" class="card-img-top" alt="project 3" />
               <div class="card-body text-center">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div><div class="col-md-4 mb-3">
-            <div class="card" >
+            <div class="card" data-aos="zoom-in-up" data-aos-delay="300" >
               <img src="img/project/9.jpg" class="card-img-top" alt="project 4" />
               <div class="card-body text-center">Lorem ipsum dolor sit amet.</p>
               </div>
             </div>
           </div><div class="col-md-4 mb-3">
-            <div class="card" >
+            <div class="card" data-aos="zoom-in-up" data-aos-delay="400">
               <img src="img/project/10.jpg" class="card-img-top" alt="project 5" />
               <div class="card-body text-center">Lorem ipsum dolor sit amet.</p>
               </div>
@@ -216,6 +218,12 @@
             form.reset();
             ('Error!', error.message)})
       })
+      
     </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({once: true,
+        duration: 100,});
+     </script>
   </body>
 </html>
